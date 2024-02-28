@@ -15,10 +15,10 @@ const buttonDisabled = computed(() => store.state.qrCodes.buttonDisabled);
 
 
 
-//Handles the button Click
+//Handles the button Click, dispatches the actions
 const handleButtonClick = () => { 
   store.dispatch("generateQRCode", userLink.value)
-  console.log(buttonCount.value)
+  
 }
 
 </script>
@@ -114,6 +114,10 @@ button{
 }
 #scan-head{
   margin-bottom: 12px;
+}
+#scan-text{
+  color: grey;
+  font-size: 14px;
 }
 
 @keyframes slideUp {
