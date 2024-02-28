@@ -1,29 +1,16 @@
-#  qr-generator-app
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a QR Code generating application.
 
-## Recommended IDE Setup
+This QR code generating app is built on Vue. It has 2 main components, one for generating the qr codes and the 
+other for generating the history of th QR codes generated. It's a simple application that makes use of Vuex for 
+store and state management. It also makes use of VueRouter to switch between two pages.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+The QR Code is generated using an api from QRtag.net which lets you generate QR codes without any
+kind of backend process. We simply append the URL you want to generate a QR code for to their API URL and it
+generates the link for the QR code. We use the code link as the source of the Image.
 
-## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
 
-```sh
-npm install
-```
 
-### Compile and Hot-Reload for Development
 
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
